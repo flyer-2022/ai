@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网址导航</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #f3f4f6;
+      padding: 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    .container {
+      width: 90%;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .box {
+      flex: 1;
+      border: 1px solid #ccc;
+      padding: 1rem;
+      margin: 0.5rem;
+      min-width: calc(100% / 4 - 1rem);
+      box-sizing: border-box;
+    }
+    @media (max-width: 768px) {
+      .box {
+        min-width: calc(100% / 2 - 1rem);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>网址导航</h1>
+  </header>
+
+  <div class="container">
+    <div class="box">
+      <a href="https://www.google.com">Google</a>
+    </div>
+    <div class="box">
+      <a href="https://www.facebook.com">Facebook</a>
+    </div>
+    <div class="box">
+      <a href="https://www.twitter.com">Twitter</a>
+    </div>
+    <div class="box">
+      <a href="https://www.linkedin.com">LinkedIn</a>
+    </div>
+    <div class="box">
+      <a href="https://www.reddit.com">Reddit</a>
+    </div>
+    <!-- Add more boxes as needed -->
+  </div>
+
+</body>
+</html>
