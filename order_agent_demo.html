@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片展示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        header {
+            background-color: #f6f8fa;
+            padding: 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box {
+            flex: 1;
+            border: 1px solid #e1e4e8;
+            padding: 1rem;
+            margin: 0.5rem;
+            min-width: calc(100% / 4 - 1rem);
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+
+        .box img {
+            max-width: 100%;
+        }
+
+        .caption {
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            background-color: #f6f8fa;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                min-width: calc(100% / 2 - 1rem);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Agent-订单收集与分析机器人</h1>
+</header>
+
+<div class="container">
+    <div class="box">
+        <p class="caption">业务部门仅需准备个性化数据</p>
+        <img src="./img/order_agent_1.png" alt="Image 1">
+
+    </div>
+    <div class="box">
+        <p class="caption">订单收集机器人</p>
+        <img src="./img/order_agent_21.png" alt="Image 2">
+    </div>
+        <div class="box">
+        <p class="caption">订单收集机器人</p>
+        <img src="./img/order_agent_22.png" alt="Image 2">
+    </div>
+        <div class="box">
+        <p class="caption">订单收集机器人</p>
+        <img src="./img/order_agent_23.png" alt="Image 2">
+    </div>
+    <div class="box">
+        <p class="caption">订单转JSON</p>
+        <img src="./img/order_agent_3.png" alt="Image 2">
+
+    </div>
+    <div class="box">
+        <p class="caption">JSON转饼图(间接实现多模态)</p>
+        <img src="./img/order_agent_4.png" alt="Image 2">
+
+    </div>
+
+</div>
+
+<footer>
+    <p>AI flyer 2023</p>
+</footer>
+
+</body>
+</html>

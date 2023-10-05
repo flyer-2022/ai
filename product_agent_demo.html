@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片展示</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        header {
+            background-color: #f6f8fa;
+            padding: 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .box {
+            flex: 1;
+            border: 1px solid #e1e4e8;
+            padding: 1rem;
+            margin: 0.5rem;
+            min-width: calc(100% / 4 - 1rem);
+            box-sizing: border-box;
+            background-color: #ffffff;
+        }
+
+        .box img {
+            max-width: 100%;
+        }
+
+        .caption {
+            margin-top: 0.5rem;
+        }
+
+        footer {
+            background-color: #f6f8fa;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .box {
+                min-width: calc(100% / 2 - 1rem);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Agent-产品信息查询机器人</h1>
+</header>
+
+<div class="container">
+    <div class="box">
+        <p class="caption">通过提示链分解复杂任务为多个子任务。</p>
+        <img src="./img/product_agent_1.png" alt="Image 1">
+
+    </div>
+    <div class="box">
+        <p class="caption">用户仅看到最终结果，中间子任务输出不会显示。</p>
+        <img src="./img/product_agent_2.png" alt="Image 2">
+
+    </div>
+
+</div>
+
+<footer>
+    <p>AI flyer 2023</p>
+</footer>
+
+</body>
+</html>
