@@ -41,6 +41,7 @@
             min-width: calc(100% / 4 - 1rem);
             box-sizing: border-box;
             background-color: #ffffff;
+            transition: transform 1.5s ease, background-color 1.5s ease;
         }
 
         .box a {
@@ -53,6 +54,11 @@
             padding: 1rem;
             text-align: center;
             font-size: 0.8rem;
+        }
+
+        .box:hover {
+            transform: scale(1.2); /* 放大1倍 */
+            background-color: #b6ceaf;
         }
 
         @media (max-width: 768px) {
@@ -136,7 +142,9 @@
         <a href="./img/doc_polishing.png" target="_blank">NLP-文稿识别及润色</a>
     </div>
     <div class="box">
-        <a href="gossip_summary.html" target="_blank">NLP-<mark>吃瓜神器</mark></a>
+        <a href="gossip_summary.html" target="_blank">NLP-
+            <mark>吃瓜神器</mark>
+        </a>
     </div>
     <div class="box">
         <a href="./img/NER.png" target="_blank">NLP-人名|地名|公司名提取</a>
